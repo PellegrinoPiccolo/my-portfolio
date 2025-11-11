@@ -25,6 +25,7 @@ const About = () => {
         'Git',
         'Docker',
         'PostgreSQL',
+        'Vue.js',
     ];
 
     const cardElement = [
@@ -57,7 +58,7 @@ const About = () => {
                 className='w-full rounded-3xl overflow-hidden relative shadow-[0_0_30px_rgba(99,102,241,0.5)]'
                 initial={{ opacity: 0, x: -10 }}
                 animate={isInView ? { opacity: 1, x: 0 } : {}}
-                transition={{duration: 0.3}}
+                transition={{duration: 0.5}}
             >   
                 <img src='/about.jpg' alt='About Me' className='relative size-full rounded-3xl object-cover mx-auto'/>
             </motion.div>
@@ -65,7 +66,7 @@ const About = () => {
                 className='text-white md:text-lg leading-relaxed w-full'
                 initial={{ opacity: 0, x: 10 }}
                 animate={isInView ? { opacity: 1, x: 0 } : {}}
-                transition={{ duration: 0.3 }}
+                transition={{ duration: 0.5 }}
             >
                 <p className='mb-4 text-gray-300'>
                     I'm a passionate full-stack and mobile developer with over 5 years of experience building digital products. I love turning complex problems into simple, beautiful, and intuitive designs.
