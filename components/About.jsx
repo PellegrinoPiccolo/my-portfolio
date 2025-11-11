@@ -52,7 +52,7 @@ const About = () => {
     <section id="about" className="w-full mx-auto px-8 py-30 min-h-screen bg-background-primary scroll-mt-20" ref={aboutRef}>
         <motion.h2 className="md:text-5xl font-light mb-6 text-center text-white text-3xl" initial={{ opacity: 0, y: 10 }} animate={isInView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.5 }}>About Me</motion.h2>
         <motion.div className='w-20 h-1 bg-linear-to-r from-indigo-400 to-purple-500 mx-auto rounded-2xl' initial={{ opacity: 0, y: 10 }} animate={isInView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.5 }}></motion.div>
-        <div className='max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center my-16 '>
+        <div className='max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center my-16 '>
             <motion.div
                 className='w-full rounded-3xl overflow-hidden relative shadow-[0_0_30px_rgba(99,102,241,0.5)]'
                 initial={{ opacity: 0, x: -10 }}
@@ -62,7 +62,7 @@ const About = () => {
                 <img src='/about.jpg' alt='About Me' className='relative size-full rounded-3xl object-cover mx-auto'/>
             </motion.div>
             <motion.div
-                className='text-white md:text-lg leading-relaxed w-full md:ml-10'
+                className='text-white md:text-lg leading-relaxed w-full'
                 initial={{ opacity: 0, x: 10 }}
                 animate={isInView ? { opacity: 1, x: 0 } : {}}
                 transition={{ duration: 0.3 }}
@@ -90,6 +90,7 @@ const About = () => {
                     initial={{ opacity: 0, y: 50 }}
                     animate={isInView ? { opacity: 1, y: 0 } : {}}
                     transition={{ duration: 0.5, delay: index * 0.2 }}
+                    className='w-full flex justify-center items-center'
                 >
                     <Card
                         title={card.title}
