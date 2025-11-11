@@ -1,1 +1,16 @@
 @import "tailwindcss";
+
+@theme {
+    --color-primary: #5971B4;
+    --color-background-primary: #030712;
+    --color-background-secondary: #0F1927;
+}
+
+:root {
+    --primary: #5971B4;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
