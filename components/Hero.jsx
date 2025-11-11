@@ -6,6 +6,14 @@ import { RiGithubLine } from "react-icons/ri";
 import { FiLinkedin } from "react-icons/fi";
 
 const Hero = () => {
+
+    const goToNextSection = () => {
+        const nextSection = document.getElementById('about');
+        if (nextSection) {
+            nextSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    }
+
   return (
     <section id='hero' className='min-h-screen flex items-center justify-center relative overflow-hidden bg-linear-to-br from-gray-950 via-gray-900 to-gray-950'>
         <div className='absolute inset-0 overflow-hidden'>
@@ -26,9 +34,9 @@ const Hero = () => {
                     <FiLinkedin size={28} />
                 </a>
             </motion.div>
-            <motion.div className='mt-8 animate-bounce' initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5, delay: 1.0 }}>
+            <motion.button onClick={goToNextSection} className='mt-8 animate-bounce cursor-pointer' initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5, delay: 1.0 }} >
                 <FaArrowDown className='text-indigo-400 mx-auto' size={22} />
-            </motion.div>
+            </motion.button>
         </div>
     </section>
   )

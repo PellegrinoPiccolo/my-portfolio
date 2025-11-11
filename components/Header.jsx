@@ -35,7 +35,7 @@ const Header = () => {
   ];
 
   return (
-    <nav className={`w-full py-4 px-8 flex justify-between items-center fixed top-0 left-0 z-50 ${isScrolled ? 'bg-gray-950/95 backdrop-blur-sm border-b border-gray-800' : 'bg-transparent'}`}>
+    <nav className={`w-full py-4 px-8 flex justify-between items-center fixed top-0 left-0 z-50 transition-colors duration-300 ${isScrolled ? 'bg-gray-950/95 backdrop-blur-sm border-b border-gray-800' : 'bg-transparent'}`}>
       <div className='max-w-7xl mx-auto w-full flex justify-between items-center py-3.5'>
         <button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className='cursor-pointer hover:scale-105 transition-transform duration-300'>
           <img src="/logo.png" alt="Logo" className='h-8' />
