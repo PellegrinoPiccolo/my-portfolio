@@ -10,7 +10,7 @@ import Card from './Card';
 const About = () => {
 
     const aboutRef = React.useRef(null);
-    const isInView = useInView(aboutRef, { once: true, margin: "-100px" });
+    const isInView = useInView(aboutRef, { once: true, margin: "-50px" });
 
     const technologies = [
         'JavaScript',
@@ -55,15 +55,17 @@ const About = () => {
         <div className='max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center my-16 '>
             <motion.div
                 className='w-full rounded-3xl overflow-hidden relative shadow-[0_0_30px_rgba(99,102,241,0.5)]'
-                initial={{ opacity: 0, x: -50 }}
+                initial={{ opacity: 0, x: -10 }}
                 animate={isInView ? { opacity: 1, x: 0 } : {}}
+                transition={{duration: 0.3}}
             >   
                 <img src='/about.jpg' alt='About Me' className='relative size-full rounded-3xl object-cover mx-auto'/>
             </motion.div>
             <motion.div
                 className='text-white md:text-lg leading-relaxed w-full md:ml-10'
-                initial={{ opacity: 0, x: 50 }}
+                initial={{ opacity: 0, x: 10 }}
                 animate={isInView ? { opacity: 1, x: 0 } : {}}
+                transition={{ duration: 0.3 }}
             >
                 <p className='mb-4 text-gray-300'>
                     I'm a passionate full-stack and mobile developer with over 5 years of experience building digital products. I love turning complex problems into simple, beautiful, and intuitive designs.
