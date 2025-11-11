@@ -1,3 +1,5 @@
+import './globals.css';
+
 export const metadata = ({
   title: "Pellegrino Piccolo - Portfolio",
   description: "Welcome to my personal portfolio website.",
