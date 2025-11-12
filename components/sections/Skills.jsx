@@ -89,7 +89,7 @@ const Skills = () => {
     ];
 
   return (
-    <div id="skills" className='w-full min-h-screen px-8 py-30 bg-background-primary flex flex-col items-center' ref={skillsRef}>
+    <section id="skills" className='w-full min-h-screen px-8 py-30 bg-background-primary flex flex-col items-center' ref={skillsRef}>
         <motion.h2 className="md:text-5xl font-light mb-6 text-center text-white text-3xl" initial={{ opacity: 0, y: 10 }} animate={isInView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.5 }}>Skills & Expertise</motion.h2>
         <motion.div className='w-20 h-1 bg-linear-to-r from-indigo-400 to-purple-500 mx-auto rounded-2xl' initial={{ opacity: 0, y: 10 }} animate={isInView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.5 }}></motion.div>
         <motion.h3 className='text-center text-gray-400 mt-4 mb-10 text-xl max-w-2xl mx-auto' initial={{ opacity: 0, y: 10 }} animate={isInView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.5, delay: 0.2 }}>
@@ -128,7 +128,7 @@ const Skills = () => {
                 </motion.div>
             ))}
         </motion.div>
-    </div>
+    </section>
   )
 }
 

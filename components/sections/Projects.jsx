@@ -17,7 +17,7 @@ const Projects = () => {
         .slice(0, 6);
 
   return (
-    <div id='projects' className='w-full mx-auto px-8 py-30 min-h-screen bg-background-secondary scroll-mt-20' ref={projectsRef}>
+    <section id='projects' className='w-full mx-auto px-8 py-30 min-h-screen bg-background-secondary scroll-mt-20' ref={projectsRef}>
       <motion.h2 className="md:text-5xl font-light mb-6 text-center text-white text-3xl" initial={{ opacity: 0, y: 10 }} animate={isInView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.5 }}>Featured Projects</motion.h2>
       <motion.div className='w-20 h-1 bg-linear-to-r from-indigo-400 to-purple-500 mx-auto rounded-2xl' initial={{ opacity: 0, y: 10 }} animate={isInView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.5 }}></motion.div>
       <motion.h3 className="text-center text-gray-400 mt-4 mb-10 text-xl max-w-2xl mx-auto">Here are some of my recent projects that showcase my skills in full-stack and mobile development.</motion.h3>
@@ -31,7 +31,7 @@ const Projects = () => {
       <motion.button onClick={() => {router.push('/projects')}} className='mt-12 px-6 py-3 bg-indigo-500 text-white rounded-full hover:bg-indigo-600 transition-colors duration-300 mx-auto block cursor-pointer' initial={{ opacity: 0, y: 10 }} animate={isInView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.5, delay: recentProjects.length * 0.2 }}>
         View All Projects
       </motion.button>
-    </div>
+    </section>
   )
 }
 
