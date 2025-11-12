@@ -15,12 +15,12 @@ const Footer = () => {
   return (
     <section className="w-full py-6 border-t border-gray-800 flex flex-col items-center justify-center bg-background-primary">
         <div className='flex flex-col w-full max-w-7xl px-6'>
-            <div className='flex flex-row items-start justify-between md:gap-20 px-6 py-10'>
-                <div className='flex flex-col items-start justify-start'>
+            <div className='flex flex-col gap-10 md:flex-row items-start justify-between md:gap-20 px-3 md:px-6 py-10'>
+                <div className='flex flex-col items-start justify-start md:w-1/3'>
                     <img src='/logo.png' alt='Logo' className='h-10 mb-2'/>
                     <p className='text-gray-400 text-sm'>I'm currently available for freelance work and interesting project collaborations.</p>
                 </div>
-                <div className='ml-10 flex flex-col'>
+                <div className='flex flex-col'>
                     <h3 className='text-white font-semibold mb-2'>Quick Links</h3>
                     <ul>
                         <li className='text-gray-400 hover:text-white cursor-pointer mb-1' onClick={() => goToSection('about')}>About</li>
@@ -29,7 +29,7 @@ const Footer = () => {
                         <li className='text-gray-400 hover:text-white cursor-pointer mb-1' onClick={() => goToSection('contact')}>Contact</li>
                     </ul>
                 </div>
-                <div className='ml-10 flex flex-col'>
+                <div className='flex flex-col'>
                     <h3 className='text-white font-semibold mb-2'>Follow me</h3>
                     <div className='flex flex-row gap-4'>
                         <div className='cursor-pointer bg-background-secondary hover:bg-background-primary p-2 rounded-md transition-colors duration-200 text-gray-400 hover:text-white mb-1'>
