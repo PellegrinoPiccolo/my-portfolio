@@ -1,11 +1,173 @@
 {
-    "inodigioielli": {
-        "name": "I Nodi Gioielli",
-        "description": "An elegant showcase website for a group of artisans who create handcrafted jewelry, featuring an intuitive admin panel that allows them to easily manage products, categories, and customer reviews.",
-        "image": "/projects/inodi-gioielli.png",
-        "link": "https://inodigioielli.it",
-        "github": "https://github.com/PellegrinoPiccolo/nodi-e-gioielli",
-        "technologies": ["Next.js", "Tailwind CSS", "Node.js", "Express", "PostgreSQL"],
-        "createat": "2025-11-11"
+    "personal-portfolio": {
+        "name": "Personal Portfolio",
+        "description": "A responsive personal website to showcase projects, blog posts and a contact form; includes an interactive projects gallery and CMS integration.",
+        "image": "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=800&h=600&fit=crop",
+        "link": "https://pellegrinopiccolo.dev",
+        "github": "https://github.com/PellegrinoPiccolo/personal-portfolio",
+        "technologies": ["Next.js", "CSS Modules", "React", "Vercel"],
+        "createat": "2024-06-15"
+    },
+    "task-manager": {
+        "name": "Task Manager",
+        "description": "A productivity app with subtasks, labels, due dates and realtime collaboration via WebSockets.",
+        "image": "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=800&h=600&fit=crop",
+        "link": "https://tasker.example.com",
+        "github": "https://github.com/PellegrinoPiccolo/task-manager",
+        "technologies": ["React", "Node.js", "Socket.IO", "MongoDB"],
+        "createat": "2023-11-02"
+    },
+    "weather-dashboard": {
+        "name": "Weather Dashboard",
+        "description": "A small weather app that visualizes forecasts with charts and supports location search and offline caching.",
+        "image": "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=800&h=600&fit=crop",
+        "link": "https://weather.example.com",
+        "github": "https://github.com/PellegrinoPiccolo/weather-dashboard",
+        "technologies": ["Vue.js", "Chart.js", "Service Workers", "OpenWeather API"],
+        "createat": "2022-08-20"
+    },
+    "ecommerce-store": {
+        "name": "E-commerce Store",
+        "description": "A small online shop with product browsing, cart, checkout and stripe payments; includes admin dashboard for orders.",
+        "image": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=600&fit=crop",
+        "link": "https://shop.example.com",
+        "github": "https://github.com/PellegrinoPiccolo/ecommerce-store",
+        "technologies": ["Next.js", "Stripe", "Prisma", "PostgreSQL"],
+        "createat": "2024-02-10"
+    },
+    "tech-blog": {
+        "name": "Tech Blog",
+        "description": "A markdown-first blog with static generation, RSS feed and syntax-highlighted code blocks.",
+        "image": "https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=800&h=600&fit=crop",
+        "link": "https://blog.example.com",
+        "github": "https://github.com/PellegrinoPiccolo/tech-blog",
+        "technologies": ["Gatsby", "GraphQL", "MDX"],
+        "createat": "2021-12-05"
+    },
+    "chat-app": {
+        "name": "Chat App",
+        "description": "Realtime chat with rooms, typing indicators and message persistence. Built for small team communication.",
+        "image": "https://images.unsplash.com/photo-1611606063065-ee7946f0787a?w=800&h=600&fit=crop",
+        "link": "https://chat.example.com",
+        "github": "https://github.com/PellegrinoPiccolo/chat-app",
+        "technologies": ["React", "Firebase", "Firestore"],
+        "createat": "2023-03-18"
+    },
+    "fintech-dashboard": {
+        "name": "Fintech Dashboard",
+        "description": "An analytics dashboard for personal finance showing income/expense charts, budgets and CSV import.",
+        "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop",
+        "link": "https://finflow.example.com",
+        "github": "https://github.com/PellegrinoPiccolo/fintech-dashboard",
+        "technologies": ["React", "D3.js", "Node.js"],
+        "createat": "2024-10-01"
+    },
+    "recipe-app": {
+        "name": "Recipe App",
+        "description": "A social recipe platform with user-submitted recipes, search, filters and favorite lists.",
+        "image": "https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=800&h=600&fit=crop",
+        "link": "https://recipes.example.com",
+        "github": "https://github.com/PellegrinoPiccolo/recipe-app",
+        "technologies": ["Next.js", "Tailwind CSS", "Supabase"],
+        "createat": "2022-04-12"
+    },
+    "travel-planner": {
+        "name": "Travel Planner",
+        "description": "Trip planner with itinerary builder, maps integration and offline travel notes.",
+        "image": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=800&h=600&fit=crop",
+        "link": "https://trip.example.com",
+        "github": "https://github.com/PellegrinoPiccolo/travel-planner",
+        "technologies": ["React", "Leaflet", "Node.js"],
+        "createat": "2020-07-30"
+    },
+    "photo-gallery": {
+        "name": "Photo Gallery",
+        "description": "A performant image gallery with lazy loading, lightbox and automatic image optimization.",
+        "image": "https://images.unsplash.com/photo-1452587925148-ce544e77e70d?w=800&h=600&fit=crop",
+        "link": "https://photos.example.com",
+        "github": "https://github.com/PellegrinoPiccolo/photo-gallery",
+        "technologies": ["Next.js", "Cloudinary", "React"],
+        "createat": "2023-05-21"
+    },
+    "event-scheduler": {
+        "name": "Event Scheduler",
+        "description": "Tool for creating and managing events, RSVPs and calendar exports (iCal).",
+        "image": "https://images.unsplash.com/photo-1506784983877-45594efa4cbe?w=800&h=600&fit=crop",
+        "link": "https://events.example.com",
+        "github": "https://github.com/PellegrinoPiccolo/event-scheduler",
+        "technologies": ["Svelte", "Node.js", "SQLite"],
+        "createat": "2021-09-10"
+    },
+    "fitness-tracker": {
+        "name": "Fitness Tracker",
+        "description": "A minimal fitness tracker with workouts, progress charts and CSV export for personal records.",
+        "image": "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=800&h=600&fit=crop",
+        "link": "https://fit.example.com",
+        "github": "https://github.com/PellegrinoPiccolo/fitness-tracker",
+        "technologies": ["React Native", "Expo", "SQLite"],
+        "createat": "2022-01-05"
+    },
+    "learning-platform": {
+        "name": "Learning Platform",
+        "description": "An educational platform with courses, progress tracking and quiz engine for instructors.",
+        "image": "https://images.unsplash.com/photo-1501504905252-473c47e087f8?w=800&h=600&fit=crop",
+        "link": "https://learn.example.com",
+        "github": "https://github.com/PellegrinoPiccolo/learning-platform",
+        "technologies": ["Next.js", "TypeScript", "PostgreSQL"],
+        "createat": "2024-05-14"
+    },
+    "notes-app": {
+        "name": "Notes App",
+        "description": "Fast note-taking app with markdown support, tags and local-first sync.",
+        "image": "https://images.unsplash.com/photo-1455390582262-044cdead277a?w=800&h=600&fit=crop",
+        "link": "https://notes.example.com",
+        "github": "https://github.com/PellegrinoPiccolo/notes-app",
+        "technologies": ["Electron", "React", "IndexedDB"],
+        "createat": "2020-11-11"
+    },
+    "kanban-board": {
+        "name": "Kanban Board",
+        "description": "Drag-and-drop kanban board with persistence and shareable boards for teams.",
+        "image": "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=800&h=600&fit=crop",
+        "link": "https://kanban.example.com",
+        "github": "https://github.com/PellegrinoPiccolo/kanban-board",
+        "technologies": ["React", "Dnd Kit", "Firebase"],
+        "createat": "2023-07-07"
+    },
+    "snippet-manager": {
+        "name": "Snippet Manager",
+        "description": "Organize and search code snippets with language highlighting and sync across devices.",
+        "image": "https://images.unsplash.com/photo-1542831371-29b0f74f9713?w=800&h=600&fit=crop",
+        "link": "https://snippets.example.com",
+        "github": "https://github.com/PellegrinoPiccolo/snippet-manager",
+        "technologies": ["Vue.js", "Prisma", "SQLite"],
+        "createat": "2022-03-03"
+    },
+    "crypto-tracker": {
+        "name": "Crypto Tracker",
+        "description": "Track portfolio performance with historical charts and price alerts using public APIs.",
+        "image": "https://images.unsplash.com/photo-1518546305927-5a555bb7020d?w=800&h=600&fit=crop",
+        "link": "https://crypto.example.com",
+        "github": "https://github.com/PellegrinoPiccolo/crypto-tracker",
+        "technologies": ["React", "Recharts", "CoinGecko API"],
+        "createat": "2021-01-20"
+    },
+    "marketplace-mini": {
+        "name": "Marketplace Mini",
+        "description": "Peer-to-peer marketplace for local sellers with search, messaging and ratings.",
+        "image": "https://images.unsplash.com/photo-1472851294608-062f824d29cc?w=800&h=600&fit=crop",
+        "link": "https://market.example.com",
+        "github": "https://github.com/PellegrinoPiccolo/marketplace-mini",
+        "technologies": ["Next.js", "Redis", "PostgreSQL"],
+        "createat": "2023-02-28"
+    },
+    "analytics-dashboard": {
+        "name": "Analytics Dashboard",
+        "description": "Real-time metrics dashboard with customizable widgets, alerts and historical reporting.",
+        "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop",
+        "link": "https://analytics.example.com",
+        "github": "https://github.com/PellegrinoPiccolo/analytics-dashboard",
+        "technologies": ["React", "Redux", "D3.js", "Node.js"],
+        "createat": "2024-12-01"
     }
 }
