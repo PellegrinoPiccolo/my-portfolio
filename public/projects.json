@@ -1,0 +1,9 @@
+{
+    "inodigioielli": {
+        "title": "I Nodi Gioielli",
+        "description": "An elegant showcase website for a group of artisans who create handcrafted jewelry, featuring an intuitive admin panel that allows them to easily manage products, categories, and customer reviews.",
+        "image": "/projects/inodi-gioielli.png",
+        "link": "https://inodigioielli.it",
+        "github": "https://github.com/PellegrinoPiccolo/nodi-e-gioielli"
+    }
+}
