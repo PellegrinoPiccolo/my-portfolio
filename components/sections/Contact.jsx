@@ -79,13 +79,13 @@ const Contact = () => {
             icon: <RiGithubLine className="w-6 h-6 text-indigo-500 hover:text-white transition-colors duration-200" />,
             label: 'GitHub',
             value: '@piccolopellegrino',
-            href: '',
+            href: 'https://github.com/PellegrinoPiccolo',
         },
         {
             icon: <FiLinkedin className="w-6 h-6 text-indigo-500 hover:text-white transition-colors duration-200" />,
             label: 'LinkedIn',
             value: 'Pellegrino Piccolo',
-            href: '',
+            href: 'https://www.linkedin.com/in/pellegrino-piccolo-2a6739247?utm_source=share_via&utm_content=profile&utm_medium=member_android',
         },
     ];
 
