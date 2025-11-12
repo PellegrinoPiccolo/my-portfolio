@@ -9,12 +9,30 @@ import { useRouter } from 'next/navigation';
 const ProjectsPage = () => {
 
     const router = useRouter();
+    const [scrolled, setScrolled] = React.useState(false);
+
+    React.useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY > 50) {
+                setScrolled(true);
+            } else {
+                setScrolled(false);
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
 
   return (
     <div className='w-full mx-auto px-8 py-30 min-h-screen bg-background-secondary scroll-mt-20'>
-        <button onClick={() => router.back()} className='absolute top-8 left-8 text-white hover:bg-gray-700 p-2 rounded-full transition cursor-pointer'>
-            <FaArrowLeft className="text-2xl" />
-        </button>
+        <div className={`fixed top-0 left-0 w-full py-2 px-4 z-999 ${scrolled ? 'bg-gray-950/95 backdrop-blur-sm border-b border-gray-800' : 'bg-transparent'} transition-colors duration-300`}>
+            <button onClick={() => router.back()} className='text-white hover:bg-gray-700 p-2 rounded-full transition cursor-pointer'>
+                <FaArrowLeft className="text-2xl" />
+            </button>
+        </div>
         <motion.h2 className="md:text-5xl font-light mb-6 text-center text-white text-3xl" initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>Featured Projects</motion.h2>
         <motion.div className='w-20 h-1 bg-linear-to-r from-indigo-400 to-purple-500 mx-auto rounded-2xl' initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}></motion.div>
         <motion.h3 className="text-center text-gray-400 mt-4 mb-10 text-xl max-w-2xl mx-auto" initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.2 }}>Here are some of my recent projects that showcase my skills in full-stack and mobile development.</motion.h3>
