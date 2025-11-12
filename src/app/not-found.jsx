@@ -1,5 +1,5 @@
 import React from 'react'
-import NotFoundPage from '../../components/NotFoundPage'
+import NotFoundPage from '../../components/sections/NotFoundPage'
 
 export const metadata = ({
   title: "404 - Page Not Found",

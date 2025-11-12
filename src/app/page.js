@@ -1,7 +1,7 @@
-import About from "../../components/About";
-import Header from "../../components/Header";
-import Hero from "../../components/Hero";
-import Projects from "../../components/Projects";
+import About from "../../components/sections/About";
+import Header from "../../components/sections/Header";
+import Hero from "../../components/sections/Hero";
+import Projects from "../../components/sections/Projects";
 
 export default function Page() {
   return (

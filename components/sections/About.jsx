@@ -1,11 +1,11 @@
 'use client'
 import React from 'react'
 import { motion, useInView } from 'framer-motion'
-import Badge from './Badge';
+import Badge from '../Badge';
 import { FaCode } from "react-icons/fa6";
 import { CiMobile1 } from "react-icons/ci";
 import { IoServerOutline } from "react-icons/io5";
-import Card from './Card';
+import Card from '../Card';
 
 const About = () => {
 
