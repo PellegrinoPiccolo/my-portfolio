@@ -55,7 +55,7 @@ const About = () => {
                 className='w-full rounded-3xl overflow-hidden relative shadow-[0_0_30px_rgba(99,102,241,0.5)]'
                 initial={{ opacity: 0, x: -20 }}
                 whileInView={{ opacity: 1, x: 0 }}
-                transition={{duration: 1}}
+                transition={{duration: 0.5 }}
                 viewport={{once: true}}
             >   
                 <img src='/about.jpg' alt='About Me' className='relative size-full rounded-3xl object-cover mx-auto'/>
@@ -64,7 +64,7 @@ const About = () => {
                 className='text-white md:text-lg leading-relaxed w-full'
                 initial={{ opacity: 0, x: 20 }}
                 whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 1 }}
+                transition={{ duration: 0.5 }}
                 viewport={{once: true}}
             >
                 <p className='mb-4 text-gray-300'>
@@ -89,7 +89,7 @@ const About = () => {
                     key={index}
                     initial={{ opacity: 0, y: 50 }}
                     whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.5, delay: index * 0.2 }}
+                    transition={{ duration: 0.5, delay: index * 0.1 }}
                     viewport={{once: true}}
                     className='w-full flex justify-center items-center'
                 >

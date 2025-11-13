@@ -90,11 +90,11 @@ const Contact = () => {
     <section className='w-full min-h-screen px-8 py-30 bg-background-secondary flex flex-col items-center' id="contact">
         <motion.h2 className="md:text-5xl font-light mb-6 text-center text-white text-3xl" initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }} viewport={{once: true}}>Get In Touch</motion.h2>
         <motion.div className='w-20 h-1 bg-linear-to-r from-indigo-400 to-purple-500 mx-auto rounded-2xl' initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }} viewport={{once: true}}></motion.div>
-        <motion.h3 className='text-center text-gray-400 mt-4 mb-10 text-xl max-w-2xl mx-auto' initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.2 }} viewport={{once: true}}>
+        <motion.h3 className='text-center text-gray-400 mt-4 mb-10 text-xl max-w-2xl mx-auto' initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.1 }} viewport={{once: true}}>
             Have a project in mind or want to collaborate? Feel free to reach out!
         </motion.h3>
         <div className='flex flex-col md:flex-row gap-6 items-start w-full justify-center'>
-            <motion.form onSubmit={handleSubmit} className='flex flex-col gap-4 w-full md:w-2xl' initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.4 }} viewport={{once: true}}>
+            <motion.form onSubmit={handleSubmit} className='flex flex-col gap-4 w-full md:w-2xl' initial={{ opacity: 0, x: -20 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.5 }} viewport={{once: true}}>
                 <input type="text" placeholder="Your Name" value={name} onChange={(e) => setName(e.target.value)} required className='p-3 rounded-md bg-background-primary text-white border border-gray-600 focus:outline-none focus:border-indigo-400' />
                 <input type="email" placeholder="Your Email" value={email} onChange={(e) => setEmail(e.target.value)} required className='p-3 rounded-md bg-background-primary text-white border border-gray-600 focus:outline-none focus:border-indigo-400' />
                 <textarea placeholder="Your Message" value={message} onChange={(e) => setMessage(e.target.value)} required className='p-3 rounded-md bg-background-primary text-white border border-gray-600 focus:outline-none focus:border-indigo-400 h-32 resize-none'></textarea>
@@ -104,7 +104,7 @@ const Contact = () => {
                 {status && <p className='text-sm text-gray-400 mt-2'>{status}</p>}
             </motion.form>
             <div className='w-full md:w-xl flex flex-col items-center justify-center'>
-                <motion.div className='w-full bg-background-primary border border-gray-800 rounded-lg p-6' initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.6 }} viewport={{once: true}}>
+                <motion.div className='w-full bg-background-primary border border-gray-800 rounded-lg p-6' initial={{ opacity: 0, x: 20 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.5 }} viewport={{once: true}}>
                     <h2 className='text-white text-2xl'>Contact Info</h2>
                     <div className='flex flex-col gap-6 mt-6'>
                         {contactInfo.map((info, index) => (
@@ -122,7 +122,7 @@ const Contact = () => {
                         ))}
                     </div>
                 </motion.div>
-                <motion.div className='w-full bg-background-primary border border-gray-800 rounded-lg p-6 mt-6 flex flex-col gap-6' initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.8 }} viewport={{once: true}}>
+                <motion.div className='w-full bg-background-primary border border-gray-800 rounded-lg p-6 mt-6 flex flex-col gap-6' initial={{ opacity: 0, x: 20 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.5 }} viewport={{once: true}}>
                     <h2 className='text-white text-2xl'>Connect With Me</h2>
                     <div className='flex items-start gap-6 mt-4 flex-col'>
                         {socialLinks.map((social, index) => (
@@ -136,7 +136,7 @@ const Contact = () => {
                         ))}
                     </div>
                 </motion.div>
-                <motion.div className='w-full bg-linear-to-tr from-indigo-500/20 to-purple-500/20 border border-gray-700 rounded-lg p-6 mt-6 gap-2 flex flex-col' initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 1.0 }} viewport={{once: true}}>
+                <motion.div className='w-full bg-linear-to-tr from-indigo-500/20 to-purple-500/20 border border-gray-700 rounded-lg p-6 mt-6 gap-2 flex flex-col' initial={{ opacity: 0, x: 20 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.5 }} viewport={{once: true}}>
                     <p className='text-indigo-400 text-lg'>Available for freelance</p>
                     <p className='text-white text-base'>I'm currently available for freelance work and interesting project collaborations.</p>
                 </motion.div>

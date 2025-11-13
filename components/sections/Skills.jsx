@@ -102,9 +102,9 @@ const Skills = () => {
                 </motion.div>
             ))}
         </motion.div>
-        <motion.div className='w-full max-w-6xl grid grid-cols-1 md:grid-cols-3 gap-8' initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.6 }} viewport={{once: true}}>
+        <motion.div className='w-full max-w-6xl grid grid-cols-1 md:grid-cols-3 gap-8' initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.1 }} viewport={{once: true}}>
             {skillCategories.map((category, index) => (
-                <motion.div key={index} className='bg-gray-900 border border-gray-800 rounded-lg p-6 hover:border-indigo-800 transition-colors duration-200' initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: index * 0.2 }} viewport={{once: true}}>
+                <motion.div key={index} className='bg-gray-900 border border-gray-800 rounded-lg p-6 hover:border-indigo-800 transition-colors duration-200' initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: index * 0.1 }} viewport={{once: true}}>
                     <div className='flex items-center gap-3 mb-4'>
                         {category.icon}
                         <h4 className='text-lg font-medium text-white'>{category.category}</h4>
