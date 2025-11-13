@@ -11,9 +11,6 @@ import { FiGitBranch } from "react-icons/fi";
 
 const Skills = () => {
 
-    const skillsRef = React.useRef(null);
-    const isInView = useInView(skillsRef, { once: true, margin: "-50px" });
-
     const technologies = [
         { name: 'React', icon: <FaCode className='text-indigo-400 w-6 h-6' /> },
         { name: 'Node.js', icon: <LuServer className='text-indigo-400 w-6 h-6' /> },
@@ -89,15 +86,15 @@ const Skills = () => {
     ];
 
   return (
-    <section id="skills" className='w-full min-h-screen px-8 py-30 bg-background-primary flex flex-col items-center' ref={skillsRef}>
-        <motion.h2 className="md:text-5xl font-light mb-6 text-center text-white text-3xl" initial={{ opacity: 0, y: 10 }} animate={isInView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.5 }}>Skills & Expertise</motion.h2>
-        <motion.div className='w-20 h-1 bg-linear-to-r from-indigo-400 to-purple-500 mx-auto rounded-2xl' initial={{ opacity: 0, y: 10 }} animate={isInView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.5 }}></motion.div>
-        <motion.h3 className='text-center text-gray-400 mt-4 mb-10 text-xl max-w-2xl mx-auto' initial={{ opacity: 0, y: 10 }} animate={isInView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.5, delay: 0.2 }}>
+    <section id="skills" className='w-full min-h-screen px-8 py-30 bg-background-primary flex flex-col items-center'>
+        <motion.h2 className="md:text-5xl font-light mb-6 text-center text-white text-3xl" initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }} viewport={{once: true}}>Skills & Expertise</motion.h2>
+        <motion.div className='w-20 h-1 bg-linear-to-r from-indigo-400 to-purple-500 mx-auto rounded-2xl' initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }} viewport={{once: true}}></motion.div>
+        <motion.h3 className='text-center text-gray-400 mt-4 mb-10 text-xl max-w-2xl mx-auto' initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.2 }} viewport={{once: true}}>
             My technical toolkit spans across modern web and mobile technologies
         </motion.h3>
-        <motion.div className='flex flex-wrap justify-center gap-8 mb-16' initial={{ opacity: 0, y: 20 }} animate={isInView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.5, delay: 0.4 }}>
+        <motion.div className='flex flex-wrap justify-center gap-8 mb-16' initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.4 }} viewport={{once: true}}>
             {technologies.map((tech, index) => (
-                <motion.div key={index} className='flex flex-col items-center gap-2 group' initial={{ opacity: 0, scale: 0 }} animate={isInView ? { opacity: 1, scale: 1 } : {}} transition={{ duration: 0.5, delay: index * 0.1 }}>
+                <motion.div key={index} className='flex flex-col items-center gap-2 group' initial={{ opacity: 0, scale: 0 }} whileInView={{ opacity: 1, scale: 1 }} transition={{ duration: 0.5, delay: index * 0.1 }} viewport={{once: true}}>
                     <div className='w-16 h-16 bg-gray-900 border border-gray-800 rounded-lg flex items-center justify-center text-indigo-400 group-hover:border-indigo-500 group-hover:bg-indigo-500/10 transition-all duration-300'>
                         {tech.icon}
                     </div>
@@ -105,9 +102,9 @@ const Skills = () => {
                 </motion.div>
             ))}
         </motion.div>
-        <motion.div className='w-full max-w-6xl grid grid-cols-1 md:grid-cols-3 gap-8' initial={{ opacity: 0, y: 20 }} animate={isInView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.5, delay: 0.6 }}>
+        <motion.div className='w-full max-w-6xl grid grid-cols-1 md:grid-cols-3 gap-8' initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.6 }} viewport={{once: true}}>
             {skillCategories.map((category, index) => (
-                <motion.div key={index} className='bg-gray-900 border border-gray-800 rounded-lg p-6 hover:border-indigo-800 transition-colors duration-200' initial={{ opacity: 0, y: 20 }} animate={isInView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.5, delay: index * 0.2 }}>
+                <motion.div key={index} className='bg-gray-900 border border-gray-800 rounded-lg p-6 hover:border-indigo-800 transition-colors duration-200' initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: index * 0.2 }} viewport={{once: true}}>
                     <div className='flex items-center gap-3 mb-4'>
                         {category.icon}
                         <h4 className='text-lg font-medium text-white'>{category.category}</h4>

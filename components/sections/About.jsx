@@ -9,9 +9,6 @@ import Card from '../Card';
 
 const About = () => {
 
-    const aboutRef = React.useRef(null);
-    const isInView = useInView(aboutRef, { once: true, margin: "-50px" });
-
     const technologies = [
         'JavaScript',
         'React',
@@ -50,23 +47,25 @@ const About = () => {
     ]
 
   return (
-    <section id="about" className="w-full mx-auto px-8 py-30 min-h-screen bg-background-primary scroll-mt-20" ref={aboutRef}>
-        <motion.h2 className="md:text-5xl font-light mb-6 text-center text-white text-3xl" initial={{ opacity: 0, y: 10 }} animate={isInView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.5 }}>About Me</motion.h2>
-        <motion.div className='w-20 h-1 bg-linear-to-r from-indigo-400 to-purple-500 mx-auto rounded-2xl' initial={{ opacity: 0, y: 10 }} animate={isInView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.5 }}></motion.div>
+    <section id="about" className="w-full mx-auto px-8 py-30 min-h-screen bg-background-primary scroll-mt-20">
+        <motion.h2 className="md:text-5xl font-light mb-6 text-center text-white text-3xl" initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }} viewport={{once: true}}>About Me</motion.h2>
+        <motion.div className='w-20 h-1 bg-linear-to-r from-indigo-400 to-purple-500 mx-auto rounded-2xl' initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }} viewport={{once: true}}></motion.div>
         <div className='max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center my-16 '>
             <motion.div
                 className='w-full rounded-3xl overflow-hidden relative shadow-[0_0_30px_rgba(99,102,241,0.5)]'
-                initial={{ opacity: 0, x: -10 }}
-                animate={isInView ? { opacity: 1, x: 0 } : {}}
-                transition={{duration: 0.5}}
+                initial={{ opacity: 0, x: -20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{duration: 1}}
+                viewport={{once: true}}
             >   
                 <img src='/about.jpg' alt='About Me' className='relative size-full rounded-3xl object-cover mx-auto'/>
             </motion.div>
             <motion.div
                 className='text-white md:text-lg leading-relaxed w-full'
-                initial={{ opacity: 0, x: 10 }}
-                animate={isInView ? { opacity: 1, x: 0 } : {}}
-                transition={{ duration: 0.5 }}
+                initial={{ opacity: 0, x: 20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 1 }}
+                viewport={{once: true}}
             >
                 <p className='mb-4 text-gray-300'>
                     I'm a passionate full-stack and mobile developer with over 5 years of experience building digital products. I love turning complex problems into simple, beautiful, and intuitive designs.
@@ -89,8 +88,9 @@ const About = () => {
                 <motion.div
                     key={index}
                     initial={{ opacity: 0, y: 50 }}
-                    animate={isInView ? { opacity: 1, y: 0 } : {}}
+                    whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: index * 0.2 }}
+                    viewport={{once: true}}
                     className='w-full flex justify-center items-center'
                 >
                     <Card
