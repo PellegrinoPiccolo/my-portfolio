@@ -46,9 +46,9 @@ const Footer = () => {
                 </div>
             </div>
             <div className='w-full border-t border-gray-800 mt-6'></div>
-            <div className='flex flex-row items-center justify-between mt-10'>
-                <p className='text-gray-400 text-sm mt-4'>&copy; {new Date().getFullYear()} Pellegrino Piccolo. All rights reserved.</p>
-                <p className='text-gray-400 text-sm mt-4'>Made with ❤️ using Next.js & Tailwind</p>
+            <div className='flex flex-col md:flex-row items-center justify-between mt-10'>
+                <p className='text-gray-400 text-sm mt-4 text-center'>&copy; {new Date().getFullYear()} Pellegrino Piccolo. All rights reserved.</p>
+                <p className='text-gray-400 text-sm mt-4 text-center'>Made with ❤️ using Next.js & Tailwind</p>
             </div>
         </div>
     </section>

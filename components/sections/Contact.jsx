@@ -118,7 +118,7 @@ const Contact = () => {
                                             {info.icon}
                                             <p className='text-white'>{info.label}:</p>
                                         </div>
-                                        <a href={info.href} className='ml-8 hover:text-indigo-500 transition-colors duration-200'>{info.value}</a>
+                                        <a href={info.href} className='ml-8 hover:text-indigo-500 transition-colors duration-200 text-sm md:text-base'>{info.value}</a>
                                     </div>
                                 </div>
                             </div>
