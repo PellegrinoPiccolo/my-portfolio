@@ -6,5 +6,13 @@
         "github": "https://github.com/PellegrinoPiccolo/my-portfolio",
         "technologies": ["Next.js", "Tailwind CSS", "JavaScript"],
         "createdAt": "2025-11-12"
+    },
+    "keiben": {
+        "name": "Keiben Srl",
+        "description": "I created a modern, responsive showcase website for Keiben Srl, clearly presenting their range of fillers and smoothing compounds.",
+        "image": "/projects/keiben.png",
+        "link": "https://www.keibensrl.com",
+        "technologies": ["Next.js", "Tailwind CSS", "JavaScript"],
+        "createdAt": "2025-11-18"
     }
 }
