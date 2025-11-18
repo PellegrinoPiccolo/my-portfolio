@@ -14,7 +14,8 @@ const ProjectCard = ({project}) => {
         <img src={project.image} alt={project.name} className='w-full h-48 object-cover'/>
         <div className='p-6 flex flex-col justify-between h-[calc(100%-12rem)]'>
             <div className='flex flex-col h-full'>
-              <h3 className='text-xl font-semibold mb-2 text-white'>{project.name}</h3>
+              <h3 className='text-xl font-semibold mb-2 text-white truncate'>{project.name}</h3>
+              <p className='text-indigo-400 mb-4 text-sm'>{project.createdAt ? new Date(project.createdAt).toLocaleDateString() : 'Unknown Date'}</p>
               <p className='text-gray-300 mb-4 text-sm'>{project.description}</p>
             </div>
             <div className='w-full flex flex-col gap-0'>
@@ -36,10 +37,12 @@ const ProjectCard = ({project}) => {
                       Code
                     </button>
                   )}
-                  <button onClick={() => goToLink(project.link)} target='_blank' rel='noopener noreferrer' className='text-white gap-1 flex items-center flex-row w-full justify-center bg-indigo-800 py-2 rounded cursor-pointer hover:bg-indigo-700 transition-colors'>
-                    Open
-                    <MdOutlineOpenInNew size={20} />
-                  </button>
+                  {project.link && (
+                    <button onClick={() => goToLink(project.link)} target='_blank' rel='noopener noreferrer' className='text-white gap-1 flex items-center flex-row w-full justify-center bg-indigo-800 py-2 rounded cursor-pointer hover:bg-indigo-700 transition-colors'>
+                      Open
+                      <MdOutlineOpenInNew size={20} />
+                    </button>
+                  )}
               </div>
             </div>
         </div>
