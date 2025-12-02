@@ -16,7 +16,7 @@ const Skills = () => {
         { name: 'Node.js', icon: <LuServer className='text-indigo-400 w-6 h-6' /> },
         { name: 'React Native', icon: <CiMobile1 className='text-indigo-400 w-6 h-6' /> },
         { name: 'PostgreSQL', icon: <LuDatabase className='text-indigo-400 w-6 h-6' /> },
-        { name: 'Javascript', icon: <FaCode className='text-indigo-400 w-6 h-6' /> },
+        { name: 'TypeScript', icon: <FaCode className='text-indigo-400 w-6 h-6' /> },
         { name: 'Render', icon: <CiCloud className='text-indigo-400 w-6 h-6' /> },
         { name: 'Next.js', icon: <FiLayout className='text-indigo-400 w-6 h-6' />},
         { name: 'Git', icon: <FiGitBranch className='text-indigo-400 w-6 h-6' />},
@@ -28,7 +28,7 @@ const Skills = () => {
             icon: <FiLayout className="text-indigo-400 w-6 h-6" />,
             skills: [
                 { name: 'React / Next.js', level: 95 },
-                { name: 'Javascript', level: 90 },
+                { name: 'Javascript / Typescript', level: 90 },
                 { name: 'Tailwind CSS', level: 92 },
                 { name: 'Redux / State Management', level: 88 },
             ],
@@ -37,10 +37,10 @@ const Skills = () => {
             category: 'Mobile',
             icon: <CiMobile1 className="text-indigo-400 w-6 h-6" />,
             skills: [
-                { name: 'Expo', level: 80 },
+                { name: 'Expo', level: 95 },
                 { name: 'React Native CLI', level: 90 },
                 { name: 'iOS / Android', level: 70 },
-                { name: 'Firebase', level: 88 },
+                { name: 'Firebase / Supabase', level: 88 },
             ],
         },
         {
@@ -70,7 +70,7 @@ const Skills = () => {
                 { name: 'AWS', level: 70 },
                 { name: 'Docker', level: 85 },
                 { name: 'CI/CD Pipelines', level: 70 },
-                { name: 'Render', level: 90 },
+                { name: 'Render / CloudFlare / Vercel', level: 90 },
             ],
         },
         {

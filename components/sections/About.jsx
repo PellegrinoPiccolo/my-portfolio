@@ -23,6 +23,8 @@ const About = () => {
         'Docker',
         'PostgreSQL',
         'Vue.js',
+        'TypeScript',
+        'Supabase',
     ];
 
     const cardElement = [
