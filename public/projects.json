@@ -14,5 +14,14 @@
         "link": "https://www.keibensrl.com",
         "technologies": ["Next.js", "Tailwind CSS", "JavaScript"],
         "createdAt": "2025-11-18"
+    },
+    "sub_track": {
+        "name": "Sub Track",
+        "description": "A privacy-focused mobile app to track subscriptions. Features expense dashboards, custom renewal alerts, and offline storage to keep financial data secure.",
+        "image": "/projects/sub-track.png",
+        "imageMode": "contain",
+        "github": "https://github.com/PellegrinoPiccolo/sub_track",
+        "technologies": ["React Native", "Expo", "TypeScript"],
+        "createdAt": "2025-12-02"
     }
 }
