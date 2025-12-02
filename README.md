@@ -6,7 +6,7 @@ Welcome to my developer portfolio! This repository provides an overview of my te
 
 ## 🌐 Portfolio Website
 
-You can visit my portfolio here: **[https://my-portfolio-neon-seven-79.vercel.app/](https://my-portfolio-neon-seven-79.vercel.app/)**
+You can visit my portfolio here: **[https://my-portfolio-eay.pages.dev/](https://my-portfolio-eay.pages.dev/)**
 
 ---
 
