@@ -3,7 +3,7 @@ import { RiGithubLine } from "react-icons/ri";
 import { MdOutlineOpenInNew } from "react-icons/md";
 import Badge from './Badge';
 
-const ProjectCard = ({project}) => {
+const ProjectCard = ({project, imageMode}) => {
 
   const goToLink = (url) => {
     window.open(url, '_blank', 'noopener,noreferrer');
@@ -11,7 +11,7 @@ const ProjectCard = ({project}) => {
 
   return (
     <div className='bg-background-primary rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 hover:scale-[1.02] ease-in-out h-full'>
-        <img src={project.image} alt={project.name} className='w-full h-48 object-cover'/>
+        <img src={project.image} alt={project.name} className={`w-full h-48 ${imageMode === 'contain' ? 'object-contain' : 'object-cover'}`}/>
         <div className='p-6 flex flex-col justify-between h-[calc(100%-12rem)]'>
             <div className='flex flex-col h-full'>
               <h3 className='text-xl font-semibold mb-2 text-white truncate'>{project.name}</h3>

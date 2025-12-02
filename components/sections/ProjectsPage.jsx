@@ -41,7 +41,7 @@ const ProjectsPage = () => {
                 .sort((a, b) => new Date(b.createat) - new Date(a.createat))
                 .map((project, index) => (
                     <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }} viewport={{once: true}} key={index}>
-                        <ProjectCard project={project} />
+                        <ProjectCard project={project} imageMode={project.imageMode} />
                     </motion.div>
                 ))
             }
