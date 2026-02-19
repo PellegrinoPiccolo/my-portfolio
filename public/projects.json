@@ -40,6 +40,6 @@
         "link": "https://regex-visualizer.pages.dev/",
         "github": "https://github.com/PellegrinoPiccolo/regex_visualizer",
         "technologies": ["React", "TypeScript", "Tailwind CSS"],
-        "createdAt": "2026-03-15"
+        "createdAt": "2026-02-10"
     }
 }
