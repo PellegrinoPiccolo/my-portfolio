@@ -23,5 +23,23 @@
         "github": "https://github.com/PellegrinoPiccolo/sub_track",
         "technologies": ["React Native", "Expo", "TypeScript"],
         "createdAt": "2025-12-02"
+    },
+    "snippetpop": {
+        "name": "SnippetPop",
+        "description": "SnippetPop is a lightweight, cross-platform manager for organizing text snippets and notes locally, offering a private and cost-free alternative to cloud-based subscriptions.",
+        "imageMode": "contain",
+        "image": "/projects/snippetpop.png",
+        "github": "https://github.com/PellegrinoPiccolo/snippetpop",
+        "technologies": ["React", "Electron", "Tailwind CSS", "TypeScript"],
+        "createdAt": "2026-02-05"
+    },
+    "regex_visualizer": {
+        "name": "Regex Visualizer",
+        "description": "A web-based tool that provides an interactive visualization of regular expressions, helping users understand and debug their regex patterns effectively.",
+        "image": "/projects/regex_visualizer.png",
+        "link": "https://regex-visualizer.pages.dev/",
+        "github": "https://github.com/PellegrinoPiccolo/regex_visualizer",
+        "technologies": ["React", "TypeScript", "Tailwind CSS"],
+        "createdAt": "2026-02-10"
     }
 }
