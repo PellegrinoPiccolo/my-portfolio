@@ -39,7 +39,7 @@
         "description": "A web-based tool that provides an interactive visualization of regular expressions, helping users understand and debug their regex patterns effectively.",
         "image": "/projects/regex_visualizer.png",
         "link": "https://regex-visualizer.pages.dev/",
-        "github": "https://github.com/PellegrinoPiccolo/regex_visualizer",
+        "github": "https://github.com/PellegrinoPiccolo/regex-visualizer",
         "technologies": ["React", "TypeScript", "Tailwind CSS"],
         "createdAt": "2026-02-10"
     }
