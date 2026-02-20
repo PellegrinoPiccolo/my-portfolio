@@ -29,6 +29,7 @@
         "description": "SnippetPop is a lightweight, cross-platform manager for organizing text snippets and notes locally, offering a private and cost-free alternative to cloud-based subscriptions.",
         "imageMode": "contain",
         "image": "/projects/snippetpop.png",
+        "download": "https://github.com/PellegrinoPiccolo/SnippetPop/releases/latest",
         "github": "https://github.com/PellegrinoPiccolo/snippetpop",
         "technologies": ["React", "Electron", "Tailwind CSS", "TypeScript"],
         "createdAt": "2026-02-05"
