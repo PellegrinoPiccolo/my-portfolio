@@ -48,6 +48,12 @@ const ProjectCard = ({project, imageMode}) => {
                         <MdOutlineOpenInNew size={20} />
                       </button>
                     )}
+                    {project.download && (
+                      <button onClick={() => goToLink(project.download)} target='_blank' rel='noopener noreferrer' className='text-white gap-1 flex items-center flex-row w-full justify-center bg-green-800 py-2 rounded cursor-pointer hover:bg-green-700 transition-colors'>
+                        Download
+                        <MdOutlineOpenInNew size={20} />
+                      </button>
+                    )}
                 </div>
               </div>
           </div>
