@@ -2,7 +2,7 @@ import React from 'react'
 
 const Card = ({title, position, icon, text}) => {
   return (
-    <div className='bg-background-secondary p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-150 max-w-sm h-full hover:outline-2 hover:outline-indigo-500'>
+    <div className='bg-background-secondary p-6 rounded-2xl shadow-lg hover:shadow-xl max-w-sm h-full outline-indigo-500 hover:outline-2'>
         <div className='flex items-center mb-1'>
             <div className='text-4xl mr-4'>
                 {icon}
