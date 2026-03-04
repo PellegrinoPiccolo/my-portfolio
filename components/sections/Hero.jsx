@@ -27,11 +27,11 @@ const Hero = () => {
             <div className='absolute top-1/4 left-1/4 w-96 h-96 bg-indigo-500/10 rounded-full blur-3xl animate-pulse'></div>
             <div className='absolute bottom-1/4 right-1/4 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl animate-pulse delay-1000'></div>
         </div>
-        <div className='relative z-10 text-center px-4'>
+        <div className='relative z-10 text-center px-4 flex flex-col items-center'>
             <motion.p className='text-sm md:text-base text-indigo-400 mb-2 uppercase tracking-widest' initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>Hi, my name is</motion.p>
-            <motion.h1 className='text-5xl md:text-7xl font-bold text-white mb-4' initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.2 }}>Pellegrino Piccolo</motion.h1>
-            <motion.h2 className='text-3xl md:text-4xl font-semibold text-gray-300 mb-6' initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.4 }}>Full-Stack & Mobile Developer</motion.h2>
-            <motion.p className='text-lg md:text-2xl text-gray-400 mb-8 max-w-3xl mx-auto' initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.6 }}>I design and build seamless digital experiences from concept to launch, creating exceptional web and mobile applications focused on quality and performance.</motion.p>
+            <motion.h1 className='text-4xl md:text-7xl font-bold text-white mb-4' initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.2 }}>Pellegrino Piccolo</motion.h1>
+            <motion.h2 className='max-w-max text-2xl md:text-4xl font-semibold text-gray-300 mb-3 md:mb-6' initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.4 }}>Full-Stack & Mobile Developer</motion.h2>
+            <motion.p className='text-md md:text-2xl text-gray-400 mb-8 max-w-3xl mx-auto' initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.6 }}>I design and build seamless digital experiences from concept to launch, creating exceptional web and mobile applications focused on quality and performance.</motion.p>
             <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
