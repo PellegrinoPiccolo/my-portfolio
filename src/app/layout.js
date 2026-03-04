@@ -1,6 +1,6 @@
 import './globals.css';
 
-export const metadata = ({
+export const metadata = {
   title: "Pellegrino Piccolo - Portfolio",
   description: "Welcome to my personal portfolio website.",
   keywords: ["portfolio", "web developer", "projects", "contact"],
@@ -30,7 +30,7 @@ export const metadata = ({
     images: ["https://pellegrinopiccolo.com/twitter-image.jpg"],
     creator: "@pellegrinopiccolo",
   },
-})
+}
 
 export default function RootLayout({ children }) {
   return (
