@@ -4,6 +4,12 @@ import { MdOutlineOpenInNew } from "react-icons/md";
 import Badge from './Badge';
 import { PhotoProvider, PhotoView } from 'react-photo-view';
 import 'react-photo-view/dist/react-photo-view.css';
+import {
+  Popover,
+  PopoverContent,
+  PopoverTrigger,
+} from "@/components/ui/popover"
+import { IoIosArrowUp } from "react-icons/io";
 
 const ProjectCard = ({project, imageMode}) => {
 
@@ -53,6 +59,28 @@ const ProjectCard = ({project, imageMode}) => {
                         Download
                         <MdOutlineOpenInNew size={20} />
                       </button>
+                    )}
+                    {project.popover && (
+                      <Popover>
+                        <PopoverTrigger asChild>
+                          <button className='text-white gap-1 flex items-center flex-row w-full justify-center bg-green-800 py-2 rounded cursor-pointer hover:bg-green-700 transition-colors'>
+                            {project.popover.title}
+                            <IoIosArrowUp size={16} />
+                          </button>
+                        </PopoverTrigger>
+                        <PopoverContent className="w-auto min-w-[180px] p-1.5">
+                          {project.popover.links.map((link, index) => (
+                            <button
+                              key={index}
+                              onClick={() => goToLink(link.url)}
+                              className='flex items-center justify-between w-full gap-6 px-3 py-2 rounded-md text-gray-300 hover:text-white hover:bg-indigo-600/20 transition-colors text-sm group'
+                            >
+                              <span>{link.title}</span>
+                              <MdOutlineOpenInNew size={13} className='text-indigo-400 group-hover:text-indigo-300 shrink-0' />
+                            </button>
+                          ))}
+                        </PopoverContent>
+                      </Popover>
                     )}
                 </div>
               </div>
