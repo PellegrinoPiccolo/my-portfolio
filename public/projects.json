@@ -16,7 +16,7 @@
         "createdAt": "2025-11-18"
     },
     "sub_track": {
-        "name": "Sub Track",
+        "name": "SubTrack",
         "description": "A privacy-focused mobile app to track subscriptions. Features expense dashboards, custom renewal alerts, and offline storage to keep financial data secure.",
         "image": "/projects/sub-track.png",
         "imageMode": "contain",
