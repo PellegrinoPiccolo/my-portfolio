@@ -16,19 +16,19 @@
         "technologies": ["Next.js", "Tailwind CSS", "JavaScript"],
         "createdAt": "2025-11-18"
     },
-    "sub_track": {
-        "name": "SubTrack",
+    "abbo": {
+        "name": "Abbo",
         "description": "A privacy-focused mobile app to track subscriptions. Features expense dashboards, custom renewal alerts, and offline storage to keep financial data secure.",
-        "image": "/projects/sub-track.png",
-        "logo": "/icons/subtrack.png",
+        "image": "/projects/abbo.png",
+        "logo": "/icons/abbo.png",
         "imageMode": "contain",
-        "github": "https://github.com/PellegrinoPiccolo/sub_track",
+        "github": "https://github.com/PellegrinoPiccolo/abbo",
         "popover": {
             "title": "Download",
             "links": [
                 {
                     "title": "Android (APK)",
-                    "url": "https://github.com/PellegrinoPiccolo/SubTrack/releases/latest/download/subtrack.apk"
+                    "url": "https://github.com/PellegrinoPiccolo/abbo/releases/latest/download/abbo.apk"
                 }
             ]
         },
