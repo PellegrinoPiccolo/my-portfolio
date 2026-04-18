@@ -11,6 +11,7 @@
         "name": "Keiben Srl",
         "description": "I created a modern, responsive showcase website for Keiben Srl, clearly presenting their range of fillers and smoothing compounds.",
         "image": "/projects/keiben.png",
+        "logo": "/icons/keiben.png",
         "link": "https://www.keibensrl.com",
         "technologies": ["Next.js", "Tailwind CSS", "JavaScript"],
         "createdAt": "2025-11-18"
@@ -19,6 +20,7 @@
         "name": "SubTrack",
         "description": "A privacy-focused mobile app to track subscriptions. Features expense dashboards, custom renewal alerts, and offline storage to keep financial data secure.",
         "image": "/projects/sub-track.png",
+        "logo": "/icons/subtrack.png",
         "imageMode": "contain",
         "github": "https://github.com/PellegrinoPiccolo/sub_track",
         "popover": {
@@ -38,6 +40,7 @@
         "description": "SnippetPop is a lightweight, cross-platform manager for organizing text snippets and notes locally, offering a private and cost-free alternative to cloud-based subscriptions.",
         "imageMode": "contain",
         "image": "/projects/snippetpop.png",
+        "logo": "/icons/snippetpop.png",
         "download": "https://github.com/PellegrinoPiccolo/SnippetPop/releases/latest",
         "github": "https://github.com/PellegrinoPiccolo/snippetpop",
         "technologies": ["React", "Electron", "Tailwind CSS", "TypeScript"],
@@ -47,6 +50,7 @@
         "name": "Regex Visualizer",
         "description": "A web-based tool that provides an interactive visualization of regular expressions, helping users understand and debug their regex patterns effectively.",
         "image": "/projects/regex_visualizer.png",
+        "logo": "/icons/regex_visualizer.png",
         "link": "https://regex-visualizer.pages.dev/",
         "github": "https://github.com/PellegrinoPiccolo/regex-visualizer",
         "technologies": ["React", "TypeScript", "Tailwind CSS"],
