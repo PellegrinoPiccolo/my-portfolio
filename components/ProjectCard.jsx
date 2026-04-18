@@ -25,7 +25,12 @@ const ProjectCard = ({project, imageMode}) => {
           </PhotoView>
           <div className='p-6 flex flex-col justify-between h-[calc(100%-12rem)]'>
               <div className='flex flex-col h-full'>
-                <h3 className='text-xl font-semibold mb-2 text-white truncate'>{project.name}</h3>
+                <div className='flex gap-2 items-center mb-2'>
+                  {project.logo && (
+                    <img src={project.logo} alt={`${project.name} logo`} className='w-10 h-10 object-contain' />
+                  )}
+                  <h3 className='text-xl font-semibold text-white truncate'>{project.name}</h3>
+                </div>
                 <p className='text-indigo-400 mb-4 text-sm'>{project.createdAt ? new Date(project.createdAt).toLocaleDateString() : 'Unknown Date'}</p>
                 <p className='text-gray-300 mb-4 text-sm'>{project.description}</p>
               </div>
