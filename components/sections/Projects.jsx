@@ -1,7 +1,7 @@
 'use client'
 import React from 'react'
 import projectsData from '../../public/projects.json'
-import { motion, useInView } from 'motion/react'
+import { motion } from 'motion/react'
 import ProjectCard from '../ProjectCard'
 import { useRouter } from 'next/navigation'
 

@@ -1,5 +1,5 @@
 'use client'
-import { useInView, motion } from 'motion/react';
+import { motion } from 'motion/react';
 import React from 'react'
 import { LuSend } from "react-icons/lu";
 import { MdOutlineEmail } from "react-icons/md";
@@ -87,7 +87,7 @@ const Contact = () => {
     ];
 
   return (
-    <section className='w-full min-h-screen px-8 py-30 bg-background-secondary flex flex-col items-center' id="contact">
+    <section className='w-full min-h-screen px-8 py-30 bg-background-secondary flex flex-col items-center scroll-mt-20' id="contact">
         <motion.h2 className="md:text-5xl font-light mb-6 text-center text-white text-3xl" initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }} viewport={{once: true}}>Get In Touch</motion.h2>
         <motion.div className='w-20 h-1 bg-linear-to-r from-indigo-400 to-purple-500 mx-auto rounded-2xl' initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }} viewport={{once: true}}></motion.div>
         <motion.h3 className='text-center text-gray-400 mt-4 mb-10 text-xl max-w-2xl mx-auto' initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.1 }} viewport={{once: true}}>

@@ -40,14 +40,14 @@ const Hero = () => {
                 <button className='inline-block px-6 py-3 bg-indigo-600 text-white rounded-full hover:bg-indigo-700 transition cursor-pointer' onClick={() => goToSection('projects')}>View Projects</button>
             </motion.div>
             <motion.div className='mt-12 flex items-center justify-center' initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5, delay: 0.9 }}>
-                <a href="https://github.com/PellegrinoPiccolo" className='text-gray-400 hover:text-white mx-4' target="_blank" rel="noopener noreferrer">
+                <a href="https://github.com/PellegrinoPiccolo" className='text-gray-400 hover:text-white mx-4' target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                     <RiGithubLine size={28} />
                 </a>
-                <a href="https://www.linkedin.com/in/pellegrino-piccolo-2a6739247?utm_source=share_via&utm_content=profile&utm_medium=member_android" className='text-gray-400 hover:text-white mx-4' target="_blank" rel="noopener noreferrer">
+                <a href="https://www.linkedin.com/in/pellegrino-piccolo-2a6739247?utm_source=share_via&utm_content=profile&utm_medium=member_android" className='text-gray-400 hover:text-white mx-4' target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                     <FiLinkedin size={28} />
                 </a>
             </motion.div>
-            <motion.button onClick={goToNextSection} className='mt-8 animate-bounce cursor-pointer' initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5, delay: 1.0 }} >
+            <motion.button onClick={goToNextSection} aria-label="Scroll to About" className='mt-8 animate-bounce cursor-pointer' initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5, delay: 1.0 }} >
                 <FaArrowDown className='text-indigo-400 mx-auto' size={22} />
             </motion.button>
         </div>

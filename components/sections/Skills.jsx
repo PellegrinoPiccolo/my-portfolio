@@ -1,6 +1,6 @@
 'use client'
 import React from 'react'
-import { motion, useInView } from 'motion/react'
+import { motion } from 'motion/react'
 import { FaCode } from "react-icons/fa6";
 import { CiMobile1 } from "react-icons/ci";
 import { LuServer } from "react-icons/lu";
@@ -86,7 +86,7 @@ const Skills = () => {
     ];
 
   return (
-    <section id="skills" className='w-full min-h-screen px-8 py-30 bg-background-primary flex flex-col items-center'>
+    <section id="skills" className='w-full min-h-screen px-8 py-30 bg-background-primary flex flex-col items-center scroll-mt-20'>
         <motion.h2 className="md:text-5xl font-light mb-6 text-center text-white text-3xl" initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }} viewport={{once: true}}>Skills & Expertise</motion.h2>
         <motion.div className='w-20 h-1 bg-linear-to-r from-indigo-400 to-purple-500 mx-auto rounded-2xl' initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }} viewport={{once: true}}></motion.div>
         <motion.h3 className='text-center text-gray-400 mt-4 mb-10 text-xl max-w-2xl mx-auto' initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.2 }} viewport={{once: true}}>

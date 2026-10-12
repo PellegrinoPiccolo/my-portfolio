@@ -1,6 +1,6 @@
 'use client'
 import React from 'react'
-import { motion, useInView } from 'motion/react'
+import { motion } from 'motion/react'
 import Badge from '../Badge';
 import { FaCode } from "react-icons/fa6";
 import { CiMobile1 } from "react-icons/ci";

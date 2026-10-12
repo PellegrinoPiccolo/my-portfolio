@@ -70,7 +70,7 @@ const Header = () => {
           ))}
         </ul>
         <div className="md:hidden">
-          <button onClick={() => setOpenMobileMenu(!openMobileMenu)} className="text-gray-300 hover:text-white transition-colors duration-300 focus:outline-none">
+          <button onClick={() => setOpenMobileMenu(!openMobileMenu)} aria-label={openMobileMenu ? 'Close menu' : 'Open menu'} aria-expanded={openMobileMenu} className="text-gray-300 hover:text-white transition-colors duration-300 focus:outline-none">
             {openMobileMenu ? <IoClose size={28} /> : <IoMenu size={28} />}
           </button>
         </div>
@@ -84,6 +84,8 @@ const Header = () => {
       {openMobileMenu && (
         <motion.button
           onClick={() => setOpenMobileMenu(false)}
+          aria-label="Close menu"
+          tabIndex={-1}
           className="fixed inset-0 bg-black/70 backdrop-blur-sm z-60"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -97,7 +99,7 @@ const Header = () => {
     <div className={`fixed top-0 right-0 w-72 h-full bg-gray-950 border-l border-gray-800 shadow-2xl z-70 transform transition-transform duration-300 flex flex-col ${openMobileMenu ? 'translate-x-0' : 'translate-x-full'}`}>
       <div className="flex items-center justify-between p-6 border-b border-gray-800">
         <img src="/logo.png" alt="Logo" className="h-7" />
-        <button onClick={() => setOpenMobileMenu(false)} className="text-gray-400 hover:text-white transition-colors duration-300 cursor-pointer">
+        <button onClick={() => setOpenMobileMenu(false)} aria-label="Close menu" className="text-gray-400 hover:text-white transition-colors duration-300 cursor-pointer">
           <IoClose size={24} />
         </button>
       </div>
@@ -123,10 +125,10 @@ const Header = () => {
 
       <div className="mt-auto p-6 border-t border-gray-800 flex flex-col gap-4">
         <div className="flex items-center gap-4">
-          <a href="https://github.com/PellegrinoPiccolo" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-indigo-500 transition-colors duration-200">
+          <a href="https://github.com/PellegrinoPiccolo" target="_blank" rel="noopener noreferrer" aria-label="GitHub" className="text-gray-400 hover:text-indigo-500 transition-colors duration-200">
             <RiGithubLine size={20} />
           </a>
-          <a href="https://www.linkedin.com/in/pellegrino-piccolo-2a6739247?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-indigo-500 transition-colors duration-200">
+          <a href="https://www.linkedin.com/in/pellegrino-piccolo-2a6739247?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="text-gray-400 hover:text-indigo-500 transition-colors duration-200">
             <FiLinkedin size={20} />
           </a>
         </div>
