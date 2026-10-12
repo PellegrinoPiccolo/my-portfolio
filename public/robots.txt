@@ -1,7 +1,7 @@
-# robots.txt per pellegrinopiccolo.dev
+# robots.txt per piccolopellegrino.dev
 
 User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://pellegrinopiccolo.dev/sitemap.xml
+Sitemap: https://piccolopellegrino.dev/sitemap.xml

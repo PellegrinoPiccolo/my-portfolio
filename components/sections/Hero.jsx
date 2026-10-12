@@ -1,7 +1,7 @@
 'use client'
 import React from 'react'
 import { FaArrowDown } from "react-icons/fa";
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 import { RiGithubLine } from "react-icons/ri";
 import { FiLinkedin } from "react-icons/fi";
 

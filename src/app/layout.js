@@ -4,19 +4,19 @@ export const metadata = {
   title: "Pellegrino Piccolo - Portfolio",
   description: "Welcome to my personal portfolio website.",
   keywords: ["portfolio", "web developer", "projects", "contact"],
-  authors: [{ name: "Pellegrino Piccolo", url: "https://pellegrinopiccolo.com" }],
+  authors: [{ name: "Pellegrino Piccolo", url: "https://piccolopellegrino.dev" }],
   creator: "Pellegrino Piccolo",
   publisher: "Pellegrino Piccolo",
   openGraph: {
     title: "Pellegrino Piccolo - Portfolio",
     description: "Welcome to my personal portfolio website.",
-    url: "https://pellegrinopiccolo.com",
+    url: "https://piccolopellegrino.dev",
     siteName: "Pellegrino Piccolo - Portfolio",
     images: [
       {
-        url: "https://pellegrinopiccolo.com/og-image.jpg",
-        width: 1200,
-        height: 630,
+        url: "https://piccolopellegrino.dev/projects/my-portfolio.png",
+        width: 3804,
+        height: 1700,
         alt: "My Portfolio",
       },
     ],
@@ -27,7 +27,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Pellegrino Piccolo - Portfolio",
     description: "Welcome to my personal portfolio website.",
-    images: ["https://pellegrinopiccolo.com/twitter-image.jpg"],
+    images: ["https://piccolopellegrino.dev/projects/my-portfolio.png"],
     creator: "@pellegrinopiccolo",
   },
 }

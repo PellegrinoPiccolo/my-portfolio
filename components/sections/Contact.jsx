@@ -1,5 +1,5 @@
 'use client'
-import { useInView, motion } from 'framer-motion';
+import { useInView, motion } from 'motion/react';
 import React from 'react'
 import { LuSend } from "react-icons/lu";
 import { MdOutlineEmail } from "react-icons/md";
@@ -75,7 +75,7 @@ const Contact = () => {
         {
             icon: <RiGithubLine className="w-6 h-6 text-indigo-500 hover:text-white transition-colors duration-200" />,
             label: 'GitHub',
-            value: '@piccolopellegrino',
+            value: '@PellegrinoPiccolo',
             href: 'https://github.com/PellegrinoPiccolo',
         },
         {

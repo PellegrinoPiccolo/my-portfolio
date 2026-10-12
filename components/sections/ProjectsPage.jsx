@@ -1,6 +1,6 @@
 'use client'
 import React from 'react'
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 import projectsData from '../../public/projects.json'
 import ProjectCard from '../ProjectCard'
 import { GoHome } from "react-icons/go";
@@ -45,7 +45,7 @@ const ProjectsPage = () => {
         <motion.h3 className="text-center text-gray-400 mt-4 mb-10 text-xl max-w-2xl mx-auto" initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.2 }}>Here are some of my recent projects that showcase my skills in full-stack and mobile development.</motion.h3>
         <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12 max-w-7xl mx-auto'>
             {Object.values(projectsData)
-                .sort((a, b) => new Date(b.createat) - new Date(a.createat))
+                .sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt))
                 .map((project, index) => (
                     <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }} viewport={{once: true}} key={index}>
                         <ProjectCard project={project} imageMode={project.imageMode} />

@@ -1,7 +1,7 @@
 'use client'
 import React from 'react'
 import projectsData from '../../public/projects.json'
-import { motion, useInView } from 'framer-motion'
+import { motion, useInView } from 'motion/react'
 import ProjectCard from '../ProjectCard'
 import { useRouter } from 'next/navigation'
 
@@ -10,7 +10,7 @@ const Projects = () => {
     const router = useRouter();
 
     const recentProjects = Object.values(projectsData)
-        .sort((a, b) => new Date(b.createat) - new Date(a.createat))
+        .sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt))
         .slice(0, 6);
 
   return (
