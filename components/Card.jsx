@@ -8,11 +8,11 @@ const Card = ({title, position, icon, text}) => {
                 {icon}
             </div>
             <div>
-                {position === 'top' && <h3 className='text-1xl md:text-2xl font-semibold text-white'>{title}</h3>}
+                {position === 'top' && <h3 className='text-xl md:text-2xl font-semibold text-white'>{title}</h3>}
             </div>
         </div>
         <div className='flex flex-col gap-1'>
-            {position === 'bottom' && <h3 className='text-1xl md:text-2xl font-semibold text-white'>{title}</h3>}
+            {position === 'bottom' && <h3 className='text-xl md:text-2xl font-semibold text-white'>{title}</h3>}
             <p className='text-gray-300 text-sm md:text-base'>{text}</p>
         </div>
     </div>

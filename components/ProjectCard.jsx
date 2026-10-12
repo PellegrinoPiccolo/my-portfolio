@@ -13,10 +13,6 @@ import { IoIosArrowUp } from "react-icons/io";
 
 const ProjectCard = ({project, imageMode}) => {
 
-  const goToLink = (url) => {
-    window.open(url, '_blank', 'noopener,noreferrer');
-  }
-
   return (
     <PhotoProvider>
       <div className='bg-background-primary rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 hover:scale-[1.02] ease-in-out h-full'>
@@ -31,39 +27,41 @@ const ProjectCard = ({project, imageMode}) => {
                   )}
                   <h3 className='text-xl font-semibold text-white truncate'>{project.name}</h3>
                 </div>
-                <p className='text-indigo-400 mb-4 text-sm'>{project.createdAt ? new Date(project.createdAt).toLocaleDateString() : 'Unknown Date'}</p>
+                <p className='text-indigo-400 mb-4 text-sm'>{project.createdAt ? new Date(project.createdAt).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric', timeZone: 'UTC' }) : 'Unknown Date'}</p>
                 <p className='text-gray-300 mb-4 text-sm'>{project.description}</p>
               </div>
               <div className='w-full flex flex-col gap-0'>
                 {project.technologies && (
                     <div>
                         <ul className='flex flex-wrap gap-2'>
-                            {project.technologies.map((tech, index) => (
-                                <Badge key={tech} variant="filled" className="rounded-[5px] w-auto h-auto hover:bg-indigo-900/30 transition-colors duration-300">
-                                  {tech}
-                              </Badge>
+                            {project.technologies.map((tech) => (
+                                <li key={tech}>
+                                    <Badge variant="filled" className="rounded-[5px] w-auto h-auto hover:bg-indigo-900/30 transition-colors duration-300">
+                                        {tech}
+                                    </Badge>
+                                </li>
                             ))}
                         </ul>
                     </div>
                 )}
                 <div className='grid grid-cols-2 gap-4 mt-4 w-full'>
                     {project.github && (
-                      <button onClick={() => goToLink(project.github)} target='_blank' rel='noopener noreferrer' className='text-white gap-1 flex items-center flex-row w-full justify-center bg-gray-800 py-2 rounded cursor-pointer hover:bg-gray-700 transition-colors'>
+                      <a href={project.github} target='_blank' rel='noopener noreferrer' className='text-white gap-1 flex items-center flex-row w-full justify-center bg-gray-800 py-2 rounded cursor-pointer hover:bg-gray-700 transition-colors'>
                         <RiGithubLine size={20} />
                         Code
-                      </button>
+                      </a>
                     )}
                     {project.link && (
-                      <button onClick={() => goToLink(project.link)} target='_blank' rel='noopener noreferrer' className='text-white gap-1 flex items-center flex-row w-full justify-center bg-indigo-800 py-2 rounded cursor-pointer hover:bg-indigo-700 transition-colors'>
+                      <a href={project.link} target='_blank' rel='noopener noreferrer' className='text-white gap-1 flex items-center flex-row w-full justify-center bg-indigo-800 py-2 rounded cursor-pointer hover:bg-indigo-700 transition-colors'>
                         Open
                         <MdOutlineOpenInNew size={20} />
-                      </button>
+                      </a>
                     )}
                     {project.download && (
-                      <button onClick={() => goToLink(project.download)} target='_blank' rel='noopener noreferrer' className='text-white gap-1 flex items-center flex-row w-full justify-center bg-green-800 py-2 rounded cursor-pointer hover:bg-green-700 transition-colors'>
+                      <a href={project.download} target='_blank' rel='noopener noreferrer' className='text-white gap-1 flex items-center flex-row w-full justify-center bg-green-800 py-2 rounded cursor-pointer hover:bg-green-700 transition-colors'>
                         Download
                         <MdOutlineOpenInNew size={20} />
-                      </button>
+                      </a>
                     )}
                     {project.popover && (
                       <Popover>
@@ -75,14 +73,16 @@ const ProjectCard = ({project, imageMode}) => {
                         </PopoverTrigger>
                         <PopoverContent className="w-auto min-w-[180px] p-1.5">
                           {project.popover.links.map((link, index) => (
-                            <button
+                            <a
                               key={index}
-                              onClick={() => goToLink(link.url)}
+                              href={link.url}
+                              target='_blank'
+                              rel='noopener noreferrer'
                               className='flex items-center justify-between w-full gap-6 px-3 py-2 rounded-md text-gray-300 hover:text-white hover:bg-indigo-600/20 transition-colors text-sm group'
                             >
                               <span>{link.title}</span>
                               <MdOutlineOpenInNew size={13} className='text-indigo-400 group-hover:text-indigo-300 shrink-0' />
-                            </button>
+                            </a>
                           ))}
                         </PopoverContent>
                       </Popover>
