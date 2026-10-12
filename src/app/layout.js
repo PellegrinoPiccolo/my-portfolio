@@ -28,7 +28,7 @@ export const metadata = {
     title: "Pellegrino Piccolo - Portfolio",
     description: "Welcome to my personal portfolio website.",
     images: ["https://piccolopellegrino.dev/projects/my-portfolio.png"],
-    creator: "@pellegrinopiccolo",
+    creator: "@Pellegrino225",
   },
 }
 

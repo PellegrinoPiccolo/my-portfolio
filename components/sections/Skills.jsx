@@ -58,7 +58,7 @@ const Skills = () => {
         icon: <LuDatabase className="text-indigo-400 w-6 h-6" />,
         skills: [
             { name: 'MySQL', level: 90 },
-            { name: 'PostgreSQL', level: 88 },
+            { name: 'PostgreSQL', level: 80 },
             { name: 'Sequelize', level: 90 },
             { name: 'MongoDB', level: 60 },
         ],

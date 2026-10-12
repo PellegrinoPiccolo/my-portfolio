@@ -13,7 +13,7 @@ You can visit my portfolio here: **[https://piccolopellegrino.dev/](https://picc
 ## 📫 Contact
 
 * **Email:** [piccolopellegrino22@gmail.com](mailto:piccolopellegrino22@gmail.com)
-* **LinkedIn:** [My LinkedIn Profile](https://www.linkedin.com/in/pellegrino-piccolo-2a6739247?utm_source=share_via&utm_content=profile&utm_medium=member_android")
+* **LinkedIn:** [My LinkedIn Profile](https://www.linkedin.com/in/pellegrino-piccolo-2a6739247?utm_source=share_via&utm_content=profile&utm_medium=member_android)
 
 ---
 
